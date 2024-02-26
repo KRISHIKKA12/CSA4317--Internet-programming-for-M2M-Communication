@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 10px;;
+    padding:0;
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.owner {
+    position: absolute;
+    max-width: 200pt;
+    top: 20pt; 
+    margin-top: 90px;
+    margin-left: 15px;
+}
+
+.enzo {
+    position: absolute;
+    max-width: 250pt;
+    top: 20pt; 
+    margin-top: 90px;
+    margin-left: 200px;
+}
+
+.enzof{
+    position: absolute;
+    max-width: 300pt;
+    top: 20pt; 
+    margin-top: 90px;
+    margin-left: 410px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    line-height: 1.0;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10pt;
+    margin-left: 370px;
+    opacity:0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    line-height: 1.0;
+    color:rgb(238, 21, 21);
+    font-family: 'Poppins', sans-serif;
+    opacity:0;
+    margin-left: 40px;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+
+.about-content p {
+    font-size: 16px;
+    margin: 15px 0 30px;
+    line-height: 0;
+    font-family: 'Poppins', sans-serif;
+    opacity:0;
+    margin-left: 10px;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.6s;
+}
+
+.bn {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 28px;
+    background: rgb(9, 9, 9);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity:0;
+    line-height: 1;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    margin-left: 5px;
+}
+
+.bn:hover {
+    color: rgb(0, 0, 0);
+    background: transparent;
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
