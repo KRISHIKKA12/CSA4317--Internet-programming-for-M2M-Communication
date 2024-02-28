@@ -1,0 +1,61 @@
+<html>
+<head><title>Form</title></head>
+<body>
+<h2>Registration Form</h2>
+<form action="#" method="post">
+<label for="firstName">First Name: </label>
+<input type="text" id="firstName" name="firstName" required><br><br>
+
+<label for="lastName">Last Name: </label>
+<input type="text" id="lastName" name="lastName" required><br><br>
+
+<label for="birthday">DOB: </label>
+<input type="date" id="birthday" name="birthday" required><br><br>
+
+<label for="userName">UserName: </label>
+<input type="text" pattern="[a-z A-Z]" id="userName" name="userName" required><br><br>
+
+<label for="password">Password: </label>
+<input type="password" id="password" name="password" required><br><br>
+
+<label for="repassword">Re-type Password: </label>
+<input type="password" id="repassword" name="repassword" required><br><br>
+
+<label for="email">E-mail: </label>
+<input type="email" id="email" name="email" required><br><br>
+
+<label for="phoneno">Phone Number: </label>
+<input type="num" id="phoneno" name="phoneno" required><br><br>
+
+<label for="gender">Gender: </label>
+<input type="radio" id="male" name="gender" value="male" checked>
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female" >
+<label for="female">Female</label><br><br>
+
+<label for="language">Language: </label>
+<input type="checkbox" id="english" name="language" value="english>
+<label for="english">English</label>
+
+<input type="checkbox" id="tamil" name="language" value="english>
+<label for="tamil">Tamil</label>
+
+<input type="checkbox" id="hindi" name="language" value="english>
+<label for="hindi">Hindi</label>
+
+<input type="checkbox" id="telugu" name="language" value="english>
+<label for="telugu">Telugu</label><br><br> 
+
+<label for="city">City: </label>
+<select id="city" name="city" required>
+<option value="chennai">Chennai</option>
+<option value="delhi">Delhi</option>
+<option value="kerala">Kerala</option>
+<option value="pondicherry">Pondicherry</option>
+<option value="hyderabad">Hyderabad</option>
+<option value="other">Other</option> 
+</select><br><br>
+
+<input type="submit" value="SUBMIT">
+</form></body></html>
