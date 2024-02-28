@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .err or{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="userinfo" onsubmit="return userinfo">
+    <label for="name"> Name: </label>
+    <input type="text" id="name" name="name" required><br><br>
+    <span class="error" id="nameError"></span>
+
+    <label for="email"> E-mail: </label>
+    <input type="email" id="email" name="email" required><br><br>
+    <span class="error" id="emailError"></span>
+
+    <label for="message"> Message: </label>
+    <input type="textarea" id="msg" name="msg" required><br><br>
+    <span class="error" id="messageError"></span>
+
+    <div>
+        <button type="submit">SUBMIT</button>
+    </div>
+    </form>
+    
+<script>
+    function userinfo()
+    {
+        var nameid= document.getElementById("name");
+        var emailid= document.getElementById("email");
+        var messageid= document.getElementById("message");
+
+        var nameError= document.getElementById("name");
+        var emailError= document.getElementById("email");
+        var messageError= document.getElementById("message");
+
+        var valid=true;
+
+        if(!nameid.checkValidity())
+        {
+            nameError.textContent=nameid.validationMessage;
+            valid=false;
+        }
+        else
+        {
+            nameError.textContent="";
+        }
+
+        if(!emailid.checkValidity())
+        {
+            emailError.textContent=emailid.validationMessage;
+            valid=false;
+        }
+        else
+        {
+            emailError.textContent="";
+        }
+
+        if(!messageid.checkValidity())
+        {
+            messageError.textContent=messageid.validationMessage;
+            valid=false;
+        }
+        else
+        {
+            messageError.textContent="";
+        }
+        return valid;
+    }
+</script>
+
+</body>
+</html>
